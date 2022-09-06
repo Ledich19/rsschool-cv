@@ -32,3 +32,48 @@ I enjoy learning and finding creative solutions to problems. For example, in my 
 + mongoDb
     - mongoose
     -----
+
+## Code example:
+>n! means n × (n − 1) × ... × 3 × 2 × 1
+For example, 10! = 10 × 9 × ... × 3 × 2 × 1 = 3628800,
+and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
+Find the sum of the digits in the number 100!
+
+```
+let stringNum = String(factorial(100));
+console.log(summString(stringNum));
+function factorial(num) {
+    num = BigInt(num);
+    if (num == 1n) {
+        return num;
+    }
+    return (num * factorial(num - 1n))
+}
+function summString(string) {
+    let summ = 0;
+    for (let i = 0; i < string.length; i++) {
+        summ += +string[i];
+    }
+    return summ;
+```
+
+---
+## Experience:
+
+- __[JOHN](https://github.com/Ledich19/01__JOHN__html_css) [HTML, css]__
+- __[snake](https://github.com/Ledich19/snake) [HTML, css, js]__
+
+
+## Education
+### university:
+__Educational institution:__ Kharkiv National University of Municipal Economy named after A.N. Beketov
+__Faculty:__ Electricity supply and lighting of cities
+### courses:
+
+- [WEB developer 2021](https://www.udemy.com/course/webdeveloper/ )
+- [(Full Stack open 2022 at the University of Helsinki in Spring)](https://fullstackopen.com/en/)
+
+## Languages:
++ English - elementary (under study)
++ Russian - Native
++ Ukrainian - Intermediate
